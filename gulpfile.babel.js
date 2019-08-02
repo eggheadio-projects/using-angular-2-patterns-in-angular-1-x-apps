@@ -24,12 +24,6 @@ const paths = {
   output: root
 };
 
-gulp.task('webpack', () => {
-  return gulp.src(paths.entry)
-    .pipe(webpack(require('./webpack.config')))
-    .pipe(gulp.dest(paths.output));
-});
-
 gulp.task('reload', gulp.series('webpack', (done) => {
   reload();
   done();
