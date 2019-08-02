@@ -1,6 +1,6 @@
-import gulp from 'gulp';
-import path from 'path';
-import webpack from 'webpack-stream';
+const gulp = require('gulp');
+const path = require('path');
+const webpack = require('webpack-stream');
 const browserSync = require('browser-sync');
 
 const reload = () => browserSync.reload();
@@ -30,22 +30,22 @@ gulp.task('webpack', () => {
     .pipe(gulp.dest(paths.output));
 });
 
-gulp.task('reload', ['webpack'], (done) => {
+gulp.task('reload', gulp.series('webpack', (done) => {
   reload();
   done();
-});
+}));
 
-gulp.task('serve', ['webpack'], () => {
+gulp.task('serve', gulp.series('webpack', () => {
   browserSync({
     port: process.env.PORT || 3000,
     open: false,
     server: { baseDir: root }
   });
-});
+}));
 
-gulp.task('watch', ['serve'], () => {
+gulp.task('watch', gulp.series('serve', () => {
   const allPaths = [].concat([paths.js], paths.html, [paths.styl]);
   gulp.watch(allPaths, ['reload']);
-});
+}));
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch'));
