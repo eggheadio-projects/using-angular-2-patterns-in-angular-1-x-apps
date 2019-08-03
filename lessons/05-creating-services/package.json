@@ -1,0 +1,61 @@
+{
+  "name": "eggly-es6",
+  "version": "0.0.1",
+  "description": "A simple bookmark manager built on ES6 using AngularJS 1.x, Gulp, and Webpack.",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-mocks": "^1.7.8",
+    "angular-ui-router": "^1.0.22",
+    "lodash": "^4.17.15",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.9.0",
+    "bootstrap-css-only": "^4.3.1",
+    "browser-sync": "^2.13.0",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "fs-walk": "0.0.2",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-template": "^5.0.0",
+    "jasmine": "^3.4.0",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^4.0.2",
+    "ng-annotate-loader": "^0.6.1",
+    "node-libs-browser": "^2.2.1",
+    "raw-loader": "^0.5.1",
+    "run-sequence": "^2.2.1",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.0",
+    "webpack-stream": "^3.2.0",
+    "yargs": "^13.3.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "karma start"
+  },
+  "keywords": [
+    "angular",
+    "webpack",
+    "es6"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simpulton/eggly-es6.git"
+  },
+  "author": "Luke Ruebbelke",
+  "license": "Apache-2.0"
+}
