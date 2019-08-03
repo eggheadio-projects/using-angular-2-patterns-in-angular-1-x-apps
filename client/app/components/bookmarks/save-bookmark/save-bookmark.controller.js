@@ -1,7 +1,7 @@
-class SaveController {
+class SaveBookmarkController {
   $onChanges() {
     this.editedBookmark = Object.assign({}, this.bookmark);
   }
 }
 
-export default SaveController;
+export default SaveBookmarkController;
