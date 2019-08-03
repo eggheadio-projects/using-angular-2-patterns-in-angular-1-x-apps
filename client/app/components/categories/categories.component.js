@@ -1,5 +1,5 @@
-import template from './categories.html'
-import controller from './categories.controller'
+import template from './categories.html';
+import controller from './categories.controller';
 import './categories.styl';
 
 const categoriesComponent = {
