@@ -1,6 +1,7 @@
 {
-  "name": "eggly-es6",
-  "version": "0.0.1",
+  "name": "04-component-controllers",
+  "version": "1.0.0",
+  "private": true,
   "description": "A simple bookmark manager built on ES6 using AngularJS 1.x, Gulp, and Webpack.",
   "main": "index.js",
   "dependencies": {
