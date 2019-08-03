@@ -7,11 +7,16 @@ class CategoriesController {
 
   $onInit() {
     this.CategoriesModel.getCategories()
-      .then(categories => this.categories = categories);
+      .then(result => this.categories = result);
   }
 
   onCategorySelected(category) {
     this.CategoriesModel.setCurrentCategory(category);
+  }
+
+  isCurrentCategory(category) {
+    return this.CategoriesModel.getCurrentCategory() &&
+      this.CategoriesModel.getCurrentCategory().id === category.id;
   }
 }
 
